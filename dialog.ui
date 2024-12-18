@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pozadina.qrc">
+    <normaloff>:/pozadina.png</normaloff>:/pozadina.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QLineEdit" name="Player1">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>280</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: pink;
+color: black;
+font: 18px;
+border-radius: 20px;
+ qproperty-alignment: AlignCenter;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Player2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>340</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #c0cbff;
+color: black;
+font: 18px;
+border-radius: 20px;
+ qproperty-alignment: AlignCenter;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>405</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(53, 53, 53);
+color: white;
+font: 18px;
+border-radius: 20px;</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>80</y>
+     <width>300</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">qproperty-alignment: AlignCenter;
+font: 30px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>Enter Players Names</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="slika">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>791</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pozadina.qrc">:/pozadina.png</pixmap>
+   </property>
+  </widget>
+  <zorder>slika</zorder>
+  <zorder>Player1</zorder>
+  <zorder>Player2</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources>
+  <include location="pozadina.qrc"/>
+ </resources>
+ <connections/>
+</ui>
