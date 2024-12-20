@@ -184,9 +184,9 @@ public:
         pushButton_13->setText(QString());
         pushButton_12->setText(QString());
         pushButton_11->setText(QString());
-        label->setText(QCoreApplication::translate("MainWindow", "X je na potezu", nullptr));
-        Player1Wins->setText(QCoreApplication::translate("MainWindow", "  Igra\304\2151 pobeda: 0", nullptr));
-        Player2Wins->setText(QCoreApplication::translate("MainWindow", "  Igra\304\2152 pobeda: 0", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Player1 's turn", nullptr));
+        Player1Wins->setText(QCoreApplication::translate("MainWindow", "  Player1 wins: 0", nullptr));
+        Player2Wins->setText(QCoreApplication::translate("MainWindow", "  Player2 wins: 0", nullptr));
         DrawGames->setText(QCoreApplication::translate("MainWindow", "  Draws: 0", nullptr));
         Restart->setText(QCoreApplication::translate("MainWindow", "Restart", nullptr));
         ind2->setText(QString());

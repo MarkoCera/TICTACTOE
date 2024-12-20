@@ -33,16 +33,16 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 10), // "changeCell"
-QT_MOC_LITERAL(2, 22, 0), // ""
-QT_MOC_LITERAL(3, 23, 10), // "clearBoard"
-QT_MOC_LITERAL(4, 34, 13), // "changePlayers"
-QT_MOC_LITERAL(5, 48, 9), // "takeInput"
-QT_MOC_LITERAL(6, 58, 6), // "input1"
-QT_MOC_LITERAL(7, 65, 6), // "input2"
-QT_MOC_LITERAL(8, 72, 11), // "isEmptyCell"
-QT_MOC_LITERAL(9, 84, 6), // "isDraw"
-QT_MOC_LITERAL(10, 91, 5), // "isWin"
+QT_MOC_LITERAL(1, 11, 9), // "takeInput"
+QT_MOC_LITERAL(2, 21, 0), // ""
+QT_MOC_LITERAL(3, 22, 6), // "input1"
+QT_MOC_LITERAL(4, 29, 6), // "input2"
+QT_MOC_LITERAL(5, 36, 13), // "changePlayers"
+QT_MOC_LITERAL(6, 50, 11), // "isEmptyCell"
+QT_MOC_LITERAL(7, 62, 10), // "changeCell"
+QT_MOC_LITERAL(8, 73, 6), // "isDraw"
+QT_MOC_LITERAL(9, 80, 5), // "isWin"
+QT_MOC_LITERAL(10, 86, 10), // "clearBoard"
 QT_MOC_LITERAL(11, 97, 24), // "on_pushButton_11_clicked"
 QT_MOC_LITERAL(12, 122, 24), // "on_pushButton_12_clicked"
 QT_MOC_LITERAL(13, 147, 24), // "on_pushButton_13_clicked"
@@ -55,9 +55,9 @@ QT_MOC_LITERAL(19, 297, 24), // "on_pushButton_33_clicked"
 QT_MOC_LITERAL(20, 322, 18) // "on_Restart_clicked"
 
     },
-    "MainWindow\0changeCell\0\0clearBoard\0"
-    "changePlayers\0takeInput\0input1\0input2\0"
-    "isEmptyCell\0isDraw\0isWin\0"
+    "MainWindow\0takeInput\0\0input1\0input2\0"
+    "changePlayers\0isEmptyCell\0changeCell\0"
+    "isDraw\0isWin\0clearBoard\0"
     "on_pushButton_11_clicked\0"
     "on_pushButton_12_clicked\0"
     "on_pushButton_13_clicked\0"
@@ -85,12 +85,12 @@ static const uint qt_meta_data_MainWindow[] = {
 
  // slots: name, argc, parameters, tag, flags
        1,    2,   99,    2, 0x0a /* Public */,
-       3,    1,  104,    2, 0x0a /* Public */,
-       4,    0,  107,    2, 0x0a /* Public */,
-       5,    2,  108,    2, 0x0a /* Public */,
-       8,    2,  113,    2, 0x0a /* Public */,
-       9,    0,  118,    2, 0x0a /* Public */,
-      10,    0,  119,    2, 0x0a /* Public */,
+       5,    0,  104,    2, 0x0a /* Public */,
+       6,    2,  105,    2, 0x0a /* Public */,
+       7,    2,  110,    2, 0x0a /* Public */,
+       8,    0,  115,    2, 0x0a /* Public */,
+       9,    0,  116,    2, 0x0a /* Public */,
+      10,    1,  117,    2, 0x0a /* Public */,
       11,    0,  120,    2, 0x08 /* Private */,
       12,    0,  121,    2, 0x08 /* Private */,
       13,    0,  122,    2, 0x08 /* Private */,
@@ -103,13 +103,13 @@ static const uint qt_meta_data_MainWindow[] = {
       20,    0,  129,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    2,    2,
-    QMetaType::Void, QMetaType::Bool,    2,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,    3,    4,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString,    6,    7,
     QMetaType::Bool, QMetaType::Int, QMetaType::Int,    2,    2,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    2,    2,
     QMetaType::Bool,
     QMetaType::Bool,
+    QMetaType::Void, QMetaType::Bool,    2,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -130,16 +130,16 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->changeCell((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 1: _t->clearBoard((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 2: _t->changePlayers(); break;
-        case 3: _t->takeInput((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
-        case 4: { bool _r = _t->isEmptyCell((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])));
+        case 0: _t->takeInput((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
+        case 1: _t->changePlayers(); break;
+        case 2: { bool _r = _t->isEmptyCell((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 5: { bool _r = _t->isDraw();
+        case 3: _t->changeCell((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 4: { bool _r = _t->isDraw();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 6: { bool _r = _t->isWin();
+        case 5: { bool _r = _t->isWin();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 6: _t->clearBoard((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 7: _t->on_pushButton_11_clicked(); break;
         case 8: _t->on_pushButton_12_clicked(); break;
         case 9: _t->on_pushButton_13_clicked(); break;

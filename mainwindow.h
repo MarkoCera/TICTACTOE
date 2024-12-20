@@ -15,6 +15,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    QString Player1;
+    QString Player2;
     QString currentPlayer = "O";
     QString board[3][3];
     int Player1Wins = 0;
@@ -22,17 +24,17 @@ public:
     int draws = 0;
     int gamesPlayed = 1;
     int turnNum = 1;
-    QString Player1;
-    QString Player2;
+
 
 public slots:
-    void changeCell( int , int );
-    void clearBoard( bool );
-    void changePlayers();
+
     void takeInput(const QString& input1, const QString& input2);
+    void changePlayers();
     bool isEmptyCell(int , int );
+    void changeCell( int , int );
     bool isDraw();
     bool isWin();
+     void clearBoard( bool );
 
     friend bool evenNum( int );
 

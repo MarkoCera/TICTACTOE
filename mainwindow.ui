@@ -181,7 +181,7 @@ background-color: rgb(0, 0, 0) 0.5;
 font: 40px;</string>
     </property>
     <property name="text">
-     <string>X je na potezu</string>
+     <string>Player1 's turn</string>
     </property>
    </widget>
    <widget class="QLabel" name="Player1Wins">
@@ -202,7 +202,7 @@ font: 18px;
 </string>
     </property>
     <property name="text">
-     <string>  Igrač1 pobeda: 0</string>
+     <string>  Player1 wins: 0</string>
     </property>
    </widget>
    <widget class="QLabel" name="Player2Wins">
@@ -221,7 +221,7 @@ font: 18px;
 border-radius: 20px;</string>
     </property>
     <property name="text">
-     <string>  Igrač2 pobeda: 0</string>
+     <string>  Player2 wins: 0</string>
     </property>
    </widget>
    <widget class="QLabel" name="DrawGames">
